@@ -162,6 +162,7 @@ equal importance to each class, not each data point. As such, the macro-F1 score
 is a favored metric in the anomaly detection space, where most (if not all)
 datasets contain far more normal points than anomalous points. The general
 formula for the macro-F1 score is given below:
+
 $$ {F1}_{macro} = \frac{{F1}_{norm} + {F1}_{anom}}{2} $$
 
 And as reminder, the general formulas for the F1 score, precision, and recall
@@ -182,9 +183,9 @@ of AD) you consider to be "positive" and which class you consider to be
 "negative". As such, for the purposes of understanding the macro-F1 score, we
 must understand what is meant by the term "per-class F1 score". In the context
 of AD, there are two per-class F1 scores that may be computed: the F1 score
-obtained when the normal points are considered to be the "positive" class
-$({F1}_{norm})$, and the F1 score obtained when the anomalous points are
-considered to be the "positive" class $({F1}_{anom})$.
+obtained when the normal points are considered to be the "positive" class, and
+the F1 score obtained when the anomalous points are considered to be the
+"positive" class.
 
 ## Conclusions and Future Work
 
