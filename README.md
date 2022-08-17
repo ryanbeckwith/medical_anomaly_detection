@@ -163,16 +163,16 @@ is a favored metric in the anomaly detection space, where most (if not all)
 datasets contain far more normal points than anomalous points. The general
 formula for the macro-F1 score is given below:
 
-$$ \textrm{F1}_{macro} = \frac{\textrm{F1}_{norm} + \textrm{F1}_{anom}}{2} $$
+$$ {F1}_{macro} = \frac{{F1}_{norm} + {F1}_{anom}}{2} $$
 
 And as reminder, the general formulas for the F1 score, precision, and recall
 (within the context of binary anomaly detection) are also given below:
 
-$$ \textrm{F1} = \frac{2 \cdot \textrm{Precision} \cdot \textrm{Recall}}
-                    {\textrm{Precision} + \textrm{Recall}}$$
+$$ {F1} = \frac{2 \cdot {Precision} \cdot {Recall}}
+                    {{Precision} + {Recall}}$$
 
-$$ \textrm{Precision} = \frac{TP}{TP + FP} $$
-$$ \textrm{Recall} = \frac{TP}{TP + FN} $$
+$$ {Precision} = \frac{TP}{TP + FP} $$
+$$ {Recall} = \frac{TP}{TP + FN} $$
 
 Note that $FP$ represents the number of false positives identified by the AD
 model, $FN$ represents the number of false negatives identified by the AD model,
@@ -186,58 +186,58 @@ must understand what is meant by the term "per-class F1 score".
 ### Per-Class F1 Scores
 
 In the context of AD, there are two per-class F1 scores that may be computed:
-$\textrm{F1}_{norm},$ the F1 score obtained when the normal points are considered
-to be the "positive" class, and $\textrm{F1}_{anom},$ the F1 score obtained when
+${F1}_{norm},$ the F1 score obtained when the normal points are considered
+to be the "positive" class, and ${F1}_{anom},$ the F1 score obtained when
 the anomalous points are considered to be the "positive" class. Now that we have
 defined these per-class F1 scores, we can investigate the formulas for each one
-in depth. We begin with the formula for $\textrm{F1}_{norm},$ which is given as
+in depth. We begin with the formula for ${F1}_{norm},$ which is given as
 follows:
 
-$$ \textrm{F1}_{norm} = \frac{2 \cdot \textrm{Precision}_{norm} \cdot \textrm{Recall}_{norm}}{\textrm{Precision}_{norm} + \textrm{Recall}_{norm}} $$ 
+$$ {F1}_{norm} = \frac{2 \cdot {Precision}_{norm} \cdot {Recall}_{norm}}{{Precision}_{norm} + {Recall}_{norm}} $$ 
 
-where $\textrm{Precision}_{norm}$ is given by
+where ${Precision}_{norm}$ is given by
 
-$$ \textrm{Precision}_{norm} = \frac{TP_{norm}}{TP_{norm} + FP_{norm}} $$
+$$ {Precision}_{norm} = \frac{TP_{norm}}{TP_{norm} + FP_{norm}} $$
 
 where $TP_{norm}$ is given by
 
-$$ TP_{norm} = \textrm{Number of truly normal points classified as normal by the AD model} $$
+$$ TP_{norm} = {Number of truly normal points classified as normal by the AD model} $$
 
 and $FP_{norm}$ is given by
 
-$$ FP_{norm} = \textrm{Number of truly anomalous points classified as normal by the AD model} $$
-and where $\textrm{Recall}_{norm}$ is given by
+$$ FP_{norm} = {Number of truly anomalous points classified as normal by the AD model} $$
+and where ${Recall}_{norm}$ is given by
 
-$$ \textrm{Recall}_{norm} = \frac{TP_{norm}}{TP_{norm} + FN_{norm}} $$
+$$ {Recall}_{norm} = \frac{TP_{norm}}{TP_{norm} + FN_{norm}} $$
 
 where $FN_{norm}$ is given by
 
-$$ FN_{norm} = \textrm{Number of truly normal points classified as anomalous by the AD model} $$
+$$ FN_{norm} = {Number of truly normal points classified as anomalous by the AD model} $$
 
-Identically, the formula for $\textrm{F1}_{anom}$ can be given in a similar
+Identically, the formula for ${F1}_{anom}$ can be given in a similar
 manner:
 
-$$ \textrm{F1}_{anom} = \frac{2 \cdot \textrm{Precision}_{anom} \cdot \textrm{Recall}_{anom}}{\textrm{Precision}_{anom} + \textrm{Recall}_{anom}} $$ 
+$$ {F1}_{anom} = \frac{2 \cdot {Precision}_{anom} \cdot {Recall}_{anom}}{{Precision}_{anom} + {Recall}_{anom}} $$ 
 
-where $\textrm{Precision}_{anom}$ is given by
+where ${Precision}_{anom}$ is given by
 
-$$ \textrm{Precision}_{anom} = \frac{TP_{anom}}{TP_{anom} + FP_{anom}} $$
+$$ {Precision}_{anom} = \frac{TP_{anom}}{TP_{anom} + FP_{anom}} $$
 
 where $TP_{anom}$ is given by
 
-$$ TP_{anom} = \textrm{Number of truly anomalous points classified as anomalous by the AD model} $$
+$$ TP_{anom} = {Number of truly anomalous points classified as anomalous by the AD model} $$
 
 and $FP_{anom}$ is given by
 
-$$ FP_{anom} = \textrm{Number of truly normal points classified as anomalous by the AD model} $$
+$$ FP_{anom} = {Number of truly normal points classified as anomalous by the AD model} $$
 
-and where $\textrm{Recall}_{anom}$ is given by
+and where ${Recall}_{anom}$ is given by
 
-$$ \textrm{Recall}_{anom} = \frac{TP_{anom}}{TP_{anom} + FN_{anom}} $$
+$$ {Recall}_{anom} = \frac{TP_{anom}}{TP_{anom} + FN_{anom}} $$
 
 where $FN_{anom}$ is given by
 
-$$ FN_{anom} = \textrm{Number of truly anomalous points classified as normal by the AD model} $$
+$$ FN_{anom} = {Number of truly anomalous points classified as normal by the AD model} $$
 
 ## Conclusions and Future Work
 
