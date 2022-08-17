@@ -186,11 +186,11 @@ must understand what is meant by the term "per-class F1 score".
 ### Per-Class F1 Scores
 
 In the context of AD, there are two per-class F1 scores that may be computed:
-$\textrm{F1}_{norm}$, the F1 score obtained when the normal points are considered
-to be the "positive" class, and $\textrm{F1}_{anom}$, the F1 score obtained when
+$\textrm{F1}_{norm},$ the F1 score obtained when the normal points are considered
+to be the "positive" class, and $\textrm{F1}_{anom},$ the F1 score obtained when
 the anomalous points are considered to be the "positive" class. Now that we have
 defined these per-class F1 scores, we can investigate the formulas for each one
-in depth. We begin with the formula for $\textrm{F1}_{norm}$, which is given as
+in depth. We begin with the formula for $\textrm{F1}_{norm},$ which is given as
 follows:
 
 $$
